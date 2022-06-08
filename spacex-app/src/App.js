@@ -27,9 +27,10 @@ function App() {
       >
       <MDBRow>
         <h2>SpaceX GraphQL API in React</h2>
+        <hr></hr>
       {data.map((item,index) => (
         <>
-        <MDBCard key={index} style={{maxWidth:"22rem", maxHeight:"24rem"}}>
+        <MDBCard key={index} style={{maxWidth:"22rem", maxHeight:"26rem"}}>
           <MDBCardImage src={item && item.ships[0] && item.ships[0].image ? item.ships[0].image : "https://www.universetoday.com/wp-content/uploads/2011/03/IMG_4650a_STS-133_Ken-Kremer.jpg"}
           position="top"
           alt={item.mission_name}
@@ -37,6 +38,7 @@ function App() {
          <MDBCardBody>
            <MDBCardTitle>{item.mission_name}</MDBCardTitle>
            <MDBCardText>{item.launch_site.site_name_long}</MDBCardText>
+           <a href='#' className='btn btn-primary'>View More</a>
          </MDBCardBody>
         </MDBCard>
         </>
