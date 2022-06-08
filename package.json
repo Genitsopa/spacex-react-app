@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@apollo/client": "^3.6.6",
+    "graphql-tag": "^2.12.6",
+    "mdb-react-ui-kit": "^3.0.0"
+  }
+}
